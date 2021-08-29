@@ -24,7 +24,7 @@ This program only works to turn a single .cpp file into a .txt file. Any associa
 
 ## Intended Usage With Makefile
 1. Obtain a local copy of this repository, or the `txt.cpp` file at least
-    1. Compile the `txt.cpp` program if you don't have the `txt.exe` and the `txt.o`
+    1. Compile the `txt.cpp` program if you don't have the `txt.exe`
 2. In the `MakefileTEMPLATE`, Modify the `"PATH_NAME_HERE"`. `"PATH_NAME_HERE"` should be replaced with the path to your `txt.exe`. Keep the quotes.
 3. Copy the `MakefileTEMPLATE` file and put it into your new project directory containing the .cpp file you want to convert into a .txt
 4. For each project, modify the `PROGRAMNAME` to be the name of the .cpp file **without the .cpp extension** you want to turn into a .txt and rename `MakefileTEMPLATE` to `Makefile`
@@ -34,11 +34,11 @@ This program only works to turn a single .cpp file into a .txt file. Any associa
 Now, whenever you `make`, using `copy`, it should turn your .cpp file into a .txt file in the same directory together!
 
 ## Non Makefile Usage (no `make`)
-Not recommended. It would be faster to copy, paste, and change the extension.
-1. Obtain a local copy of this repository, or the `txt.cpp` file at least
-2. Compile the `txt.cpp` program if you don't have the `txt.exe` and the `txt.o`
+Not recommended. It would be faster to copy, paste, and change the extension than to remember/type in the command.
+1. Obtain a local copy of this repository, or the `txt.cpp` file at least.
+2. Compile the `txt.cpp` program into `txt.exe` if you don't have the `txt.exe`.
 3. Obtain the path to `txt.exe`.
-4. `cd` to your project directory and paste the path and the .cpp file name **without the .cpp extension**
+4. Using your terminal, `cd` to your project directory and paste the path and the .cpp file name **without the .cpp extension**
     * Example: `"C:\Users\Dylan Vu\CLionProjects\cisp400\cpptotxt\txt.exe" main` to turn `main.cpp` into a txt file
-    * Repeat each time you want to reconvert. `Makefiles` can do this automatically, though!
+    * Repeat this step each time you want to reconvert.
 5. Done!    
