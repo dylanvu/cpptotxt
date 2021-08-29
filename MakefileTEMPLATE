@@ -1,0 +1,24 @@
+CXX = g++
+
+CXXFLAGS= -std=c++17 -g -Wall
+
+# Edit this to be your singular file name. Do not have .cpp!
+PROGRAMNAME = main
+
+all: $(PROGRAMNAME) copy
+
+
+$(PROGRAMNAME): $(PROGRAMNAME).o
+	$(CXX) $(CXXFLAGS) -o $(PROGRAMNAME) $(PROGRAMNAME).o
+
+$(PROGRAMNAME).o: $(PROGRAMNAME).cpp
+	$(CXX) $(CXXFLAGS) -c $(PROGRAMNAME).cpp
+
+# Command to convert current .cpp file in PROGRAMNAME into a txt file whenever you make
+# For "PATH_NAME_HERE", modify it to be the location of your txt.exe. For example: "C:\Users\Dylan Vu\CLionProjects\cisp400\cpptotxt\txt.exe" (with quotes)
+copy:
+	"PATH_NAME_HERE" $(PROGRAMNAME)
+
+clean:
+	#del *.exe *.o
+	rm -f *.o *.exe
