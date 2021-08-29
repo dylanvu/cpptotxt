@@ -2,22 +2,24 @@
 This program provides a way to save a copy of a single .cpp file as a .txt class. Made to be used specifically for Professor Caleb Fowler's CISP 400 course assignment submission formats.
 
 ## Disclaimer
-This program only works to turn a single .cpp file into a .txt file. Any associated header files will not be copied over and `txt.cpp` will have to be modified to convert .h files into .txt files.
+This program only works to turn a single .cpp file into a .txt file. Any associated header files will not be copied over using the `MakefileTEMPLATE` and `txt.cpp` will have to be modified to convert .h files into .txt files.
 
 ## FAQs
 * What is a `Makefile`? Why should I know what they are?
-   * When you have multiple C++ files you want to "link together" when you compile, normally you'd have to type in an egregious amount of commands to do so and you have to memorize a very specific command to compile. Makefiles help you automate these commands so that you can easily recompile your code using one simple command: `make`.
-    * Extra resources:
-      * https://makefiletutorial.com/
-    * `Makefiles` are often used in industry and C++ programming. Not everything will be in the same .cpp file.
-    
-* Why did you make this?
-   * I develop on my computer. I got a bit lazy having to copy my .cpp file, save it in another directory, rename it to a .txt, then put it back into my assignment directory for CISP 400. Only to do this again later when I modified something on the program.
-    * Since I already use `Makefiles` to compile my code, I wanted a way to speed things up and save myself a little monotony, as well as a little exercise to learn how to run commands in a non-compiler context using a `Makefile`.
-
-
+    * When you have multiple C++ files you want to "link together" when you compile, normally you'd have to type in an egregious amount of commands to do so and you have to memorize a very specific command to compile. Makefiles help you automate these commands so that you can easily recompile your code using one simple command: `make`.
+    * When you modify several files, it might be difficult to remember which ones you changed to recompile. `Makefiles` remember and recompile for you.
+    * `Makefiles` are often used in industry and C++ programming, since you will likely be dealing with multiple interlinked files.
+    * Extra Resources
+      * Makefile guide: https://makefiletutorial.com/
+      * Using g++: https://www.geeksforgeeks.org/compiling-with-g-plus-plus/
+      * Another Makefile guide: https://www.softwaretestinghelp.com/cpp-makefile-tutorial/
+* How do I set up `make`?
+    * Windows: I use MinGW32, which came with a `mingw32-make` command.
+    * I haven't used Linux or Mac yet, but these may help:
+      * Linux: https://askubuntu.com/questions/161104/how-do-i-install-make
+      * Mac: https://stackoverflow.com/questions/10265742/how-to-install-make-and-gcc-on-a-mac
 ## Recommended Prerequisites
-* g++ compiler (the compiler the Makefile template uses, feel free to modify the template)
+* g++ compiler (the compiler the Makefile template uses, feel free to modify the template depending on your compiler)
 * Ability to run `make`
 
 ## Intended Usage With Makefile
