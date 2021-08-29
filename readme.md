@@ -14,7 +14,7 @@ This program only works to turn a single .cpp file into a .txt file. Any associa
       * Using g++: https://www.geeksforgeeks.org/compiling-with-g-plus-plus/
       * Another Makefile guide: https://www.softwaretestinghelp.com/cpp-makefile-tutorial/
 * How do I set up `make`?
-    * Windows: I use MinGW32, which came with a `mingw32-make` command.
+    * Windows: I use MinGW32, which came with a `mingw32-make` command (instead of `make`).
     * I haven't used Linux or Mac yet, but these may help:
       * Linux: https://askubuntu.com/questions/161104/how-do-i-install-make
       * Mac: https://stackoverflow.com/questions/10265742/how-to-install-make-and-gcc-on-a-mac
